@@ -15,6 +15,7 @@ Route::group(['prefix' => 'admin'], function() {
     Route::post('news/create', 'Admin\NewsController@create')->middleware('auth');
     Route::get('news', 'Admin\NewsController@index')->middleware('auth'); // 追記
     Route::get('profile/create', 'Admin\ProfileController@add')->middleware('auth');
+    Route::post('profile/create', 'Admin\ProfileController@create')->middleware('auth');
     Route::get('profile/edit', 'Admin\ProfileController@edit')->middleware('auth');
 
 });
@@ -35,14 +36,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
 課題3
 Route::get('XX', 'AAAController@bbb');
 */
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
