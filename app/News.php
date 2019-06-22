@@ -10,9 +10,8 @@ class News extends Model
 
     // 以下を追記
     public static $rules = array(
-        'name' => 'required',
-        'hobby' => 'required',
-        'gender' => 'required',
-        'introduction' => 'required',
+        'title' => 'required',
+        'body' => 'required',
+        
     );
 }

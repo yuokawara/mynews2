@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="login-box card">
-                    <div class="login-header card-header mx-auto">{{ __('message.ログイン') }}</div>
+                    <div class="login-header card-header mx-auto">{{ __('ログイン') }}</div>
 
                     <div class="login-body card-body">
                         <form method="POST" action="{{ route('login') }}">
@@ -52,7 +52,7 @@
                             <div class="form-group row mb-0">
                                 <div class="col-md-8 offset-md-4">
                                     <button type="submit" class="btn btn-primary">
-                                        {{ __('message.ログイン') }}
+                                        {{ __('ログイン') }}
                                     </button>
                                 </div>
                             </div>
