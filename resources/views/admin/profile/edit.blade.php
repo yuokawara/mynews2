@@ -1,7 +1,7 @@
 @extends('layouts.profile')
 @section('title', 'プロフィールの編集')
 
-@section('profile-edit')
+@section('content')
 <div class="container">
   <div class="row">
     <div class="col-md-8 mx-auto">
@@ -25,7 +25,7 @@
     <div class="form-group row">
       <label class="col-md-2" for="title">性別</label>
       <div class="col-md-10">
-        <textarea class="form-control" name="gender" rows="20">
+        <textarea class="form-control" name="gender">
           {{ $profile_form->gender }}
         </textarea>
       </div>
@@ -33,7 +33,7 @@
     <div class="form-group row">
       <label class="col-md-2" for="title">趣味</label>
       <div class="col-md-10">
-        <textarea class="form-control" name="hobby" rows="20">
+        <textarea class="form-control" name="hobby">
           {{ $profile_form->hobby }}
         </textarea>
       </div>

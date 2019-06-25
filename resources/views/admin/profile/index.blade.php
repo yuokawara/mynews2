@@ -1,10 +1,10 @@
 @extends('layouts.profile')
 @section('title', 'プロフィールの一覧')
 
-@section('profile-index')
+@section('content')
     <div class="container">
         <div class="row">
-            <h2>ニュース一覧</h2>
+            <h2>プロフィール一覧</h2>
         </div>
         <div class="row">
             <div class="col-md-4">
@@ -26,15 +26,15 @@
             </div>
         </div>
         <div class="row">
-            <div class="list-profile col-md-12 mx-auto">
+            <div class="list-news col-md-12 mx-auto">
                 <div class="row">
                     <table class="table table-dark">
                         <thead>
                             <tr>
                                 <th width="10%">ID</th>
-                                <th width="20%">名前</th>
-                                <th width="20%">性別</th>
-                                <th width="20%">趣味</th>
+                                <th width="10%">名前</th>
+                                <th width="10%">性別</th>
+                                <th width="10%">趣味</th>
                                 <th width="50%">自己紹介</th>
                                 <th width="10%">操作</th>
                             </tr>
