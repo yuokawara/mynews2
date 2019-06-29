@@ -22,6 +22,7 @@
           name="name" value="{{ $profile_form->name }}">
         </div>
       </div>
+<<<<<<< HEAD
       <div class="form-group row">
         <label class="col-md-2" for="title">性別</label>
           <div class="col-md-10">
@@ -39,6 +40,25 @@
           <div class="col-md-10">
             <textarea class="form-control" name="introduction" rows="20">{{ $profile_form->introduction }}</textarea>
           </div>
+=======
+    </div>
+    <div class="form-group row">
+      <label class="col-md-2" for="title">性別1</label>
+      <div class="col-md-10">
+        <textarea class="form-control" name="gender">{{ $profile_form->gender }}</textarea>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-md-2" for="title">趣味1</label>
+      <div class="col-md-10">
+        <textarea class="form-control" name="hobby">{{ $profile_form->hobby }}</textarea>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-md-2" for="title">自己紹介</label>
+      <div class="col-md-10">
+        <textarea class="form-control" name="introduction" rows="20">{{ $profile_form->introduction }}</textarea>
+>>>>>>> develop
       </div>
       <div class="form-group row">
         <label class="col-md-2">画像</label>
