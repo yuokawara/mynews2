@@ -14,7 +14,7 @@ class CreateProfilesHistoriesTable extends Migration
     public function up()
     {
         //{
-            Schema::create('profiles-histories', function (Blueprint $table) {
+            Schema::create('profile_histories', function (Blueprint $table) {
                 $table->increments('id');
                 $table->string('name'); // 名前
                 $table->string('gender'); // 性別
@@ -33,6 +33,6 @@ class CreateProfilesHistoriesTable extends Migration
      */
     public function down()
     {
-      Schema::dropIfExists('profiles-histories');
+      Schema::dropIfExists('profile_histories');
     }
 }
