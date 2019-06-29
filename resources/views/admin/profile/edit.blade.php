@@ -23,27 +23,21 @@
       </div>
     </div>
     <div class="form-group row">
-      <label class="col-md-2" for="title">性別</label>
+      <label class="col-md-2" for="title">性別1</label>
       <div class="col-md-10">
-        <textarea class="form-control" name="gender">
-          {{ $profile_form->gender }}
-        </textarea>
+        <textarea class="form-control" name="gender">{{ $profile_form->gender }}</textarea>
       </div>
     </div>
     <div class="form-group row">
       <label class="col-md-2" for="title">趣味</label>
       <div class="col-md-10">
-        <textarea class="form-control" name="hobby">
-          {{ $profile_form->hobby }}
-        </textarea>
+        <textarea class="form-control" name="hobby">{{ $profile_form->hobby }}</textarea>
       </div>
     </div>
     <div class="form-group row">
       <label class="col-md-2" for="title">自己紹介</label>
       <div class="col-md-10">
-        <textarea class="form-control" name="introduction" rows="20">
-          {{ $profile_form->introduction }}
-        </textarea>
+        <textarea class="form-control" name="introduction" rows="20">{{ $profile_form->introduction }}</textarea>
       </div>
     </div>
     <div class="form-group row">
