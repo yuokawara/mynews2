@@ -3,7 +3,6 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\News;
-// 以下を追記
 use App\History;
 use Carbon\Carbon;
 use Storage; //追加

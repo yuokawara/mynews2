@@ -4,7 +4,6 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Profile;//追加
 use App\ProfileHistory;
-
 use Carbon\Carbon;
 
 class ProfileController extends Controller
@@ -95,7 +94,7 @@ class ProfileController extends Controller
 
         return redirect('admin/profile');
     }
-    public function delete(Request $request)
+        public function delete(Request $request)
     {
     // 該当するNews Modelを取得
         $profile = Profile::find($request->id);
