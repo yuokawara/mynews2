@@ -57,3 +57,9 @@
         "optimize-autoloader": true
     }
 }
+
+"require-dev": {
+    "phpunit/phpunit": "~4.0",
+    "phpspec/phpspec": "~2.1",
+    "heroku/heroku-buildpack-php": "*"
+},
