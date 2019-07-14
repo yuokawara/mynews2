@@ -25,7 +25,7 @@ class NewsController extends Controller
     // if ($form['image'])変更前
         if (isset($form['image']))
     {
-      $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
+      $path = Storage::disk('s3')->putFile('/',$request->file('image'),'public');
       $news->image_path = Storage::disk('s3')->url($path);
     }
         else
@@ -76,7 +76,7 @@ class NewsController extends Controller
     // 送信されてきたフォームデータを格納する
         $news_form = $request->all();
         if (isset($news_form['image'])) {
-          $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
+          $path = Storage::disk('s3')->putFile('/',$request->file('image'),'public');
           $news->image_path = Storage::disk('s3')->url($path);
         unset($news_form['image']);
     }   elseif (0 == strcmp($request->remove, 'true')) {
