@@ -1,5 +1,7 @@
 <?php
 namespace App\Http\Controllers\Admin;
+ini_set('upload_max_filesize','8M');
+ini_set('post_max_size','8M');
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\News;
@@ -25,7 +27,7 @@ class NewsController extends Controller
     // if ($form['image'])変更前
         if (isset($form['image']))
     {
-      $path = Storage::disk('s3')->putFile('/',$request->file('image'),'public');
+      $path = Storage::disk('s3')->putFile('yuokawraimages',$request->file('image'),'public');
       $news->image_path = Storage::disk('s3')->url($path);
     }
         else
