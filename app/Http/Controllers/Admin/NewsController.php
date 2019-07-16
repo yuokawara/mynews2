@@ -27,7 +27,7 @@ class NewsController extends Controller
     // if ($form['image'])変更前
         if (isset($form['image']))
     {
-      $path = Storage::disk('s3')->putFile('yuokawaraimages',$request->file('image'),'public');
+      $path = Storage::disk('s3')->putFile('/yuokawaraimages',$request->file('image'),'public');
       $news->image_path = Storage::disk('s3')->url($path);
     }
         else
