@@ -1,7 +1,5 @@
 <?php
 namespace App\Http\Controllers\Admin;
-ini_set('upload_max_filesize','8M');
-ini_set('post_max_size','8M');
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\News;
