@@ -7,6 +7,9 @@
             <div class="row">
                 <div class="headline col-md-10 mx-auto">
                     <div class="row">
+                      <p>
+                        test2019.0720
+                      </p>
                         <div class="col-md-6">
                             <div class="caption mx-auto">
                                 <div class="image">
@@ -16,9 +19,6 @@
                                 </div>
                                 <div class="title p-2">
                                     <h1>{{ str_limit($headline->title, 70) }}</h1>
-                                    <p>
-                                      テストです
-                                    </p>
                                 </div>
                             </div>
                         </div>
